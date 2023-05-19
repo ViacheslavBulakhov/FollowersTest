@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkfollowers_test=self.webpackChunkfollowers_test||[]).push([[680],{680:function(e,t,o){o.r(t),o.d(t,{default:function(){return n}});var r=o(184);function n(){return(0,r.jsx)("div",{style:{backgroundImage:"url('https://picsum.photos/1920/1080')",backgroundSize:"cover",backgroundPosition:"center",minHeight:"100%",borderRadius:"20px",overflow:"hidden"}})}}}]);
+//# sourceMappingURL=680.25cfe78b.chunk.js.map
