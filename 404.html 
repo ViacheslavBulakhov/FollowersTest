@@ -1,6 +1,14 @@
-<script>
-  var url = window.location.href;
-  var base = '<base href="https://example.com/">'; // Замініть 'https://example.com/' на базову URL-адресу вашого додатку
-  var redirectUrl = url.replace(/\/$/, '') + '/index.html';
-  document.write(base + '<script>window.location.replace("' + redirectUrl + '");</script>');
-</script>
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    var url = window.location.href;
+    var base = '<base href="https://viacheslavbulakhov.github.io/FollowersTest/">';
+    var redirectUrl = url.replace(/\/$/, '') + '/index.html';
+    document.write(base + '<script>window.location.replace("' + redirectUrl + '");</script>');
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
