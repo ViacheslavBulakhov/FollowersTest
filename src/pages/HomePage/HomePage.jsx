@@ -2,13 +2,20 @@ export default function HomePage() {
   return (
     <div
       style={{
-        backgroundImage: "url('https://picsum.photos/1920/1080')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        minHeight: '100%',
-        borderRadius: '20px',
-        overflow: 'hidden',
+        minHeight: "100%",
+        borderRadius: "20px",
+        overflow: "hidden",
       }}
-    ></div>
+    >
+      <img
+        src="https://picsum.photos/1920/1080"
+        alt=""
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+      />
+    </div>
   );
 }
