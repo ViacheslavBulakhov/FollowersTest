@@ -1,4 +1,5 @@
 import logo from "images/Logo.png";
+import userPhoto from "images/UserPhoto.png";
 import {
   BackgroundWrap,
   CardBox,
@@ -10,6 +11,11 @@ import {
   UserPhotoWrap,
 } from "./UserCard.styled";
 import { useEffect, useState } from "react";
+import {
+  followersValidations,
+  toggleFollowStatus,
+  updateUsersList,
+} from "./userUtils";
 
 export default function UserCard({
   user: { tweets, followers, id, avatar },
@@ -33,7 +39,6 @@ export default function UserCard({
 
     return isFollowingResult;
   });
-  console.log(avatar);
 
   useEffect(() => {
     setUsers((prevState) =>
@@ -51,59 +56,18 @@ export default function UserCard({
         "users",
         JSON.stringify([{ id, followers: followers + 1, isFollowing: true }])
       );
-      stateChanger();
+
+      toggleFollowStatus({ setLocalFollowers, setIsFollowing, isFollowing });
+
       return;
     }
 
-    const updatedUsersList = updateUsersList(localUsers);
+    localStorage.setItem(
+      "users",
+      JSON.stringify(updateUsersList({ isFollowing, id, followers }))
+    );
 
-    localStorage.setItem("users", JSON.stringify(updatedUsersList));
-    stateChanger();
-  };
-
-  const updateUsersList = (localUsers) => {
-    const isUser = localUsers.some((localUser) => localUser.id === id);
-    return isUser
-      ? [
-          ...localUsers.map((user) =>
-            user.id === id
-              ? {
-                  ...user,
-                  isFollowing: !user.isFollowing,
-                  followers: isFollowing
-                    ? user.followers - 1
-                    : user.followers + 1,
-                }
-              : { ...user }
-          ),
-        ]
-      : [
-          ...localUsers,
-          { id, isFollowing: !isFollowing, followers: followers + 1 },
-        ];
-  };
-
-  const stateChanger = () => {
-    if (isFollowing) {
-      setLocalFollowers((prevState) => prevState - 1);
-    } else {
-      setLocalFollowers((prevState) => prevState + 1);
-    }
-    setIsFollowing((prevState) => !prevState);
-  };
-
-  const followersValidations = (number) => {
-    const length = number.toString().length;
-
-    if (length <= 3) {
-      return number;
-    }
-
-    const lastThreeDigits = number.toString().slice(length - 3);
-    const remainingDigits = number.toString().slice(0, length - 3);
-    const validateNumber = `${remainingDigits},${lastThreeDigits}`;
-
-    return validateNumber;
+    toggleFollowStatus({ setLocalFollowers, setIsFollowing, isFollowing });
   };
 
   return (
@@ -114,10 +78,10 @@ export default function UserCard({
       <BackgroundWrap />
       <UserPhotoWrap>
         <img
-          src={avatar}
+          src={avatar ?? userPhoto}
           alt="logo"
-          width={62}
-          height={62}
+          width={avatar ? 62 : 80}
+          height={avatar ? 62 : 80}
           style={{ borderRadius: "50%" }}
         />
       </UserPhotoWrap>
