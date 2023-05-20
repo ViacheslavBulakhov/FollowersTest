@@ -10,7 +10,7 @@ Build tool: Create React App.\
 Backend: Mock API.\
 Markup language: HTML.\
 Style language: CSS.\
-Dependency:react,react-dom,react-hot-toast,react-router-dom,styled-components,axios.
+Dependency:react,react-dom,react-hot-toast,react-router-dom,styled-components,axios.\
 DevDependencies: gh-pages,prettier.
 
 ## Getting Started with Create React App
