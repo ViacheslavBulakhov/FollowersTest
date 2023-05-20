@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import backgroundImage from 'images/CardBackground.png';
+import styled from "styled-components";
+import backgroundImage from "images/CardBackground.png";
 
 export const CardBox = styled.div`
   position: relative;
@@ -49,6 +49,19 @@ export const DelimiterCardElement = styled.div`
   box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 `;
+export const ImageFrameElement = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #ebd8ff;
+  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.06),
+    inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
+`;
 export const UserInformationItem = styled.li`
   font-family: Montserrat;
   font-style: normal;
@@ -66,7 +79,7 @@ export const FollowBtn = styled.button`
   border-radius: 10.3108px;
   cursor: pointer;
   width: 196px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
