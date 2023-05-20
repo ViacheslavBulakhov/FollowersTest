@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+# FollowersTest
+
+## Description of the project
+
+This project is a test task designed to test your software development skills. It contains features and components that need to be developed or improved. The project may contain frontend, backend or any other necessary infrastructure for its functioning.
+
+Programming language: JavaScript.
+Library: React.
+Build tool: Create React App.
+Backend: Mock API.
+Markup language: HTML.
+Style language: CSS.
+Dependency:react,react-dom,react-hot-toast,react-router-dom,styled-components,axios.
+DevDependencies: gh-pages,prettier.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
