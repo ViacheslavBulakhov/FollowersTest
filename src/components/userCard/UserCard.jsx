@@ -87,7 +87,7 @@ export default function UserCard({
         />
       </UserPhotoWrap>
       <DelimiterCardElement />
-      <ImageFrameElement />
+      {avatar && <ImageFrameElement />}
 
       <ul
         style={{
