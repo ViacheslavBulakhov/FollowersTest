@@ -1,4 +1,3 @@
-import userPhoto from "images/UserPhoto.png";
 import logo from "images/Logo.png";
 import {
   BackgroundWrap,
