@@ -83,6 +83,7 @@ export default function UserCard({
           width={avatar ? 62 : 80}
           height={avatar ? 62 : 80}
           style={{ borderRadius: "50%" }}
+          loading="lazy"
         />
       </UserPhotoWrap>
       <DelimiterCardElement />
