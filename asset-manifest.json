@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/FollowersTest/static/css/main.c14e7d57.css",
-    "main.js": "/FollowersTest/static/js/main.6600f94d.js",
-    "static/js/483.a065ad50.chunk.js": "/FollowersTest/static/js/483.a065ad50.chunk.js",
+    "main.js": "/FollowersTest/static/js/main.bf47ebb2.js",
+    "static/js/483.7a953712.chunk.js": "/FollowersTest/static/js/483.7a953712.chunk.js",
     "static/js/680.9e3a388b.chunk.js": "/FollowersTest/static/js/680.9e3a388b.chunk.js",
     "static/js/353.0ad3b1fa.chunk.js": "/FollowersTest/static/js/353.0ad3b1fa.chunk.js",
     "static/media/CardBackground.png": "/FollowersTest/static/media/CardBackground.f105c89a8c09bde75c23.png",
     "static/media/UserPhoto.png": "/FollowersTest/static/media/UserPhoto.a7eb1124d6de5b18f550.png",
     "index.html": "/FollowersTest/index.html",
     "main.c14e7d57.css.map": "/FollowersTest/static/css/main.c14e7d57.css.map",
-    "main.6600f94d.js.map": "/FollowersTest/static/js/main.6600f94d.js.map",
-    "483.a065ad50.chunk.js.map": "/FollowersTest/static/js/483.a065ad50.chunk.js.map",
+    "main.bf47ebb2.js.map": "/FollowersTest/static/js/main.bf47ebb2.js.map",
+    "483.7a953712.chunk.js.map": "/FollowersTest/static/js/483.7a953712.chunk.js.map",
     "680.9e3a388b.chunk.js.map": "/FollowersTest/static/js/680.9e3a388b.chunk.js.map",
     "353.0ad3b1fa.chunk.js.map": "/FollowersTest/static/js/353.0ad3b1fa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c14e7d57.css",
-    "static/js/main.6600f94d.js"
+    "static/js/main.bf47ebb2.js"
   ]
 }
